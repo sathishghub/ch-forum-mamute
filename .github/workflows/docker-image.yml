@@ -14,5 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - run: ls
+    - run: cd "docker/production"
     - name: Build the Docker image
-      run:  docker-compose -f docker-compose-it.yml up -d
+      run:  docker-compose up -d
