@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: ls
-    - run: cd "docker"
+    - run: cd "./docker"
     - run: ls
     - run: cd "production"
     - run: ls
